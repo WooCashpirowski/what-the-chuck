@@ -31,6 +31,12 @@ const JokesProvider = ({ children }) => {
     localStorage.setItem('politicalJokes', JSON.stringify(politicalJokes));
   }, [religionJokes, explicitJokes, politicalJokes]);
 
+  const resetAll = () => {
+    setReligionJokes([]);
+    setPoliticalJokes([]);
+    setExplicitJokes([]);
+  };
+
   const useWindowWidth = () => {
     const [width, setWidth] = useState(0);
     useLayoutEffect(() => {
@@ -54,6 +60,7 @@ const JokesProvider = ({ children }) => {
         setExplicitJokes,
         setPoliticalJokes,
         useWindowWidth,
+        resetAll,
       }}
     >
       {children}

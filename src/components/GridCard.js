@@ -92,7 +92,7 @@ const CardWrapper = styled.div`
   }
 `;
 
-const SwiperCard = ({ joke }) => {
+const GridCard = ({ joke }) => {
   return (
     <CardWrapper>
       <div className="header">
@@ -111,8 +111,8 @@ const SwiperCard = ({ joke }) => {
   );
 };
 
-export default SwiperCard;
+export default GridCard;
 
-SwiperCard.propTypes = {
+GridCard.propTypes = {
   joke: PropTypes.object,
 };

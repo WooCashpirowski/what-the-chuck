@@ -11,8 +11,8 @@ const RippleWrapper = styled.div`
 const Ripple = styled.div`
   display: inline-block;
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 80px;
+  height: 80px;
   div {
     position: absolute;
     border: 4px solid #fff;
